@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sycamore Grounds Coffee House | Best Coffee & Bakery in Pasadena & Deer Park, TX</title>
+  <meta name="description" content="Your neighborhood coffee house since 2012! Enjoy restored historic houses, classically handcrafted coffee roasted by Amaya Roasting Co., and scratch-made bakery items in Pasadena and Deer Park, TX." />
+  <meta name="keywords" content="coffee shop pasadena tx, coffee deer park tx, sycamore grounds, amaya coffee, breakfast tacos, latte flights, catering, specialty coffee houston" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sycamore Grounds Coffee House - Best Coffee & Bakery" />
+  <meta property="og:description" content="Your Neighborhood Coffee House since 2012! Come on in and enjoy our restored houses, classically made coffee drinks, and made-in-house bakery items." />
+  <meta property="og:image" content="pansy-location.jpg" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOP BAR (Status & Quick Contacts) -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-status live-status-badge">
+        <span class="status-dot"></span>
+        <span>Checking store hours...</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:2819786307" class="top-bar-link">
+          <i class="fa-solid fa-phone"></i>
+          <span>Pasadena: (281) 978-6307</span>
+        </a>
+        <a href="tel:2818848667" class="top-bar-link">
+          <i class="fa-solid fa-phone"></i>
+          <span>Deer Park: (281) 884-8667</span>
+        </a>
+        <a href="#locations" class="top-bar-link">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>2 Locations</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Sycamore Grounds Coffee House Home">
+        <img src="logo.png" alt="Sycamore Grounds Logo" class="brand-logo-img" />
+        <div class="brand-info">
+          <span class="brand-name">Sycamore Grounds</span>
+          <span class="brand-tagline">Coffee House & Bakery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-item-link active">Home</a>
+        <a href="menu.html" class="nav-item-link">Menu</a>
+        <a href="catering.html" class="nav-item-link">Catering</a>
+        <a href="about.html" class="nav-item-link">Our Story</a>
+        <a href="contact.html" class="nav-item-link">Locations & Hours</a>
+        <a href="contact.html#contact-form" class="nav-item-link">Contact</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-actions">
+        <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>Order Online</span>
+        </a>
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="logo.png" alt="Sycamore Grounds Logo" class="brand-logo-img" />
+        <span class="brand-name" style="font-size: 1.15rem;">Sycamore Grounds</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="live-status-badge" style="margin-bottom: 1.5rem; font-size: 0.85rem;"></div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+      <a href="menu.html" class="drawer-link">Drink & Food Menu <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+      <a href="catering.html" class="drawer-link">Catering Packages <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+      <a href="about.html" class="drawer-link">Our Story & History <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+      <a href="contact.html" class="drawer-link">Locations & Hours <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+      <a href="contact.html#contact-form" class="drawer-link">Contact Us <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+    </nav>
+    <div class="drawer-actions">
+      <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="width: 100%;">
+        <i class="fa-solid fa-bag-shopping"></i> Order Pickup on Square
+      </a>
+      <a href="tel:2819786307" class="btn btn-outline" style="width: 100%;">
+        <i class="fa-solid fa-phone"></i> Call Pasadena Shop
+      </a>
+      <a href="tel:2818848667" class="btn btn-outline" style="width: 100%;">
+        <i class="fa-solid fa-phone"></i> Call Deer Park Shop
+      </a>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <i class="fa-solid fa-award"></i>
+          <span>Neighborhood Coffee House Since 2012</span>
+        </div>
+        <h1 class="hero-title">
+          Handcrafted Coffee &amp; Scratch Bakery in a <span>Restored Historic Home</span>
+        </h1>
+        <p class="hero-description">
+          Welcome to Pasadena and Deer Park's beloved local sanctuary. Enjoy classically made espresso drinks roasted locally by Houston's Amaya Roasting Co., scratch-baked pastries every single morning, and a warm community atmosphere that feels just like home.
+        </p>
+        <div class="hero-cta-group">
+          <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-car-side"></i> Order Online for Drive-Thru
+          </a>
+          <a href="#menu" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-book-open"></i> Explore Menu
+          </a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div class="hero-feature-text">
+              <h4>Amaya Roasting</h4>
+              <p>Locally roasted beans</p>
+            </div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+            <div class="hero-feature-text">
+              <h4>Baked In-House</h4>
+              <p>Fresh scratch daily</p>
+            </div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fa-solid fa-car"></i></div>
+            <div class="hero-feature-text">
+              <h4>Drive-Thru Ready</h4>
+              <p>15-min quick pickup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-media-wrap">
+        <div class="hero-main-card">
+          <img src="latte-bakery-spread.jpg" alt="Artisanal latte and freshly baked treats at Sycamore Grounds" class="hero-main-img" />
+          <div class="hero-pill-badge">
+            <i class="fa-solid fa-fire"></i> Best Coffee in Pasadena, TX
+          </div>
+          <div class="hero-floating-card">
+            <div class="floating-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+            <div class="floating-text">
+              <h5>Famous Latte Flights</h5>
+              <p>Available year-round with seasonal twists</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRIVE-THRU & ORDER ONLINE INSTRUCTIONS BANNER -->
+  <section class="drive-thru-section">
+    <div class="container drive-thru-container">
+      <div class="drive-thru-content">
+        <h2>Need To Make It <span>Quick This Time?</span></h2>
+        <p>
+          Order your favorite handcrafted drinks and fresh-from-the-oven bakery treats online, then breeze through our drive-thru window or step inside for prompt pickup.
+        </p>
+        <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-bag-shopping"></i> Order Now on Square Store
+        </a>
+      </div>
+      <div class="pickup-steps">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>Pick Your Location</h4>
+          <p>Choose either our original Pansy St. shop in Pasadena or our Deer Park location.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Time Your Order</h4>
+          <p>Pickup is auto-set for 15 minutes. Please order when you are ~15 minutes away so your drink stays piping hot or icy crisp.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Drive-Thru Pickup</h4>
+          <p>Swing by our convenient drive-thru or walk in. Whole milk is standard unless alternative milk is chosen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE TOP 3 DRINKS SHOWCASE -->
+  <section class="section-padding" id="favorites">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Customer Obsessions</span>
+        <h2 class="section-title">Our Top 3 Signature Drinks</h2>
+        <p class="section-subtitle">
+          Handcrafted by passionate baristas using classically calibrated espresso shots, velvety microfoam, and artisanal syrups.
+        </p>
+      </div>
+
+      <div class="top-drinks-grid">
+        <!-- Drink 1 -->
+        <article class="drink-card">
+          <div class="drink-card-media">
+            <img src="latte-flight-1.jpg" alt="Cold Latte Flights at Sycamore Grounds" class="drink-card-img" />
+            <span class="drink-badge special"><i class="fa-solid fa-star"></i> Fan Favorite #1</span>
+          </div>
+          <div class="drink-card-body">
+            <h3 class="drink-title">Iced Latte Flights</h3>
+            <p class="drink-desc">
+              Can't choose just one flavor? Sample a flight of four miniature iced specialty lattes tailored to your palate. Available year-round with seasonal rotating creations!
+            </p>
+            <div class="drink-card-footer">
+              <span class="drink-tasting-notes">Year-Round Custom Flight</span>
+              <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Drink 2 -->
+        <article class="drink-card">
+          <div class="drink-card-media">
+            <img src="hot-latte.jpg" alt="Artisan Hot Latte with Rosetta Art" class="drink-card-img" />
+            <span class="drink-badge"><i class="fa-solid fa-fire"></i> Classic Craft</span>
+          </div>
+          <div class="drink-card-body">
+            <h3 class="drink-title">Handcrafted Hot Lattes</h3>
+            <p class="drink-desc">
+              Prepared the traditional European way with a double shot of freshly ground Amaya espresso and perfectly textured microfoam adorned with delicate latte art.
+            </p>
+            <div class="drink-card-footer">
+              <span class="drink-tasting-notes">Amaya Espresso + Steamed Milk</span>
+              <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Drink 3 -->
+        <article class="drink-card">
+          <div class="drink-card-media">
+            <img src="iced-mocha.jpg" alt="Decadent Iced Mocha with Chocolate Swirl" class="drink-card-img" />
+            <span class="drink-badge"><i class="fa-solid fa-ice-cream"></i> Chilled Perfection</span>
+          </div>
+          <div class="drink-card-body">
+            <h3 class="drink-title">Iced Lattes &amp; Mochas</h3>
+            <p class="drink-desc">
+              Chilled espresso layered over cold milk and ice, finished with rich chocolate drizzle. Try our signature Vanilla Twilight or Brown Sugar Starlight variations!
+            </p>
+            <div class="drink-card-footer">
+              <span class="drink-tasting-notes">Rich Chocolate &amp; Espresso</span>
+              <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALTY MENU HIGHLIGHTS (COMPACT SHOWCASE) -->
+  <section class="section-padding menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Scratch Kitchen &amp; Espresso Bar</span>
+        <h2 class="section-title">Our Specialty Menu</h2>
+        <p class="section-subtitle">
+          Handcrafted daily with locally roasted Amaya espresso beans and scratch house recipes.
+        </p>
+      </div>
+
+      <!-- 4 Category Showcase Cards -->
+      <div class="category-showcase-grid">
+        <!-- Hot Classics -->
+        <a href="menu.html?cat=hot" class="category-card">
+          <div class="category-icon-wrap">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <h3 class="category-title">Classics &amp; Espresso</h3>
+          <p class="category-desc">Precision-pulled espresso with dense golden crema, velvety microfoam, and fresh Amaya drip roasts.</p>
+          <div class="category-highlights">
+            <span class="cat-pill">Drip Coffee</span>
+            <span class="cat-pill">Cortado</span>
+            <span class="cat-pill">Hot Lattes</span>
+            <span class="cat-pill">Flat White</span>
+          </div>
+          <span class="category-link-text">Explore Hot Drinks <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Cold Drinks & Flights -->
+        <a href="menu.html?cat=cold" class="category-card">
+          <div class="category-icon-wrap">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3 class="category-title">Chilled Brews &amp; Flights</h3>
+          <p class="category-desc">Our iconic 4-flavor Iced Latte Flights, 16-hour slow steep cold brew, iced matchas, and blended frappes.</p>
+          <div class="category-highlights">
+            <span class="cat-pill">Latte Flights</span>
+            <span class="cat-pill">Cold Brew</span>
+            <span class="cat-pill">Frappes</span>
+            <span class="cat-pill">Lemonade Slush</span>
+          </div>
+          <span class="category-link-text">Explore Cold Drinks <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Scratch Bakery -->
+        <a href="menu.html?cat=bakery" class="category-card">
+          <div class="category-icon-wrap">
+            <i class="fa-solid fa-cookie-bite"></i>
+          </div>
+          <h3 class="category-title">Fresh Scratch Bakery</h3>
+          <p class="category-desc">Freshly baked in-house daily. Famous giant cinnamon rolls, fruit turnovers, artisanal scones, and Southern pies.</p>
+          <div class="category-highlights">
+            <span class="cat-pill">Cinnamon Rolls</span>
+            <span class="cat-pill">Artisan Scones</span>
+            <span class="cat-pill">Sweet Breads</span>
+            <span class="cat-pill">Pies &amp; Cobblers</span>
+          </div>
+          <span class="category-link-text">Explore Bakery <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Savory & Breakfast -->
+        <a href="menu.html?cat=savory" class="category-card">
+          <div class="category-icon-wrap">
+            <i class="fa-solid fa-bacon"></i>
+          </div>
+          <h3 class="category-title">Savory Texas Breakfast</h3>
+          <p class="category-desc">Warm morning fuel. Stuffed breakfast tacos with house salsa, fluffy Texas sausage kolaches, and flaky quiches.</p>
+          <div class="category-highlights">
+            <span class="cat-pill">Breakfast Tacos</span>
+            <span class="cat-pill">Jalapeño Kolaches</span>
+            <span class="cat-pill">Croissants</span>
+            <span class="cat-pill">Quiche</span>
+          </div>
+          <span class="category-link-text">Explore Savory <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+
+      <!-- Compact Full Menu Action Bar -->
+      <div class="compact-cta-strip">
+        <div class="compact-cta-info">
+          <h3>Looking for our complete catalog?</h3>
+          <p>Search all 40+ handcrafted beverages, syrups, scratch sweets, and breakfast plates on our full menu page.</p>
+        </div>
+        <div class="compact-cta-buttons">
+          <a href="menu.html" class="btn btn-primary">
+            <i class="fa-solid fa-book-open"></i>
+            <span>View Full Menu (40+ Items)</span>
+          </a>
+          <button class="btn btn-outline" data-view-image="drink-menu.png" data-image-alt="Original Printed Drink Menu">
+            <i class="fa-solid fa-file-image"></i>
+            <span>Printed Drink Menu</span>
+          </button>
+          <button class="btn btn-outline" data-view-image="bakery-menu.png" data-image-alt="Original Printed Bakery Menu">
+            <i class="fa-solid fa-file-image"></i>
+            <span>Printed Bakery Menu</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CATERING & EVENTS (COMPACT SHOWCASE) -->
+  <section class="section-padding catering-section" id="catering">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Meetings, Weddings &amp; Celebrations</span>
+        <h2 class="section-title">Effortless Catering For Any Event</h2>
+        <p class="section-subtitle">
+          Fresh coffee boxes, hot taco platters, and scratch bakery trays delivered to your office or prepped for easy morning pickup.
+        </p>
+      </div>
+
+      <!-- Compact Catering Perks Bar -->
+      <div class="catering-perks-strip">
+        <div class="catering-perk-item">
+          <div class="perk-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="perk-text">
+            <strong>48-Hour Notice</strong>
+            <span>Baked &amp; brewed fresh from scratch</span>
+          </div>
+        </div>
+        <div class="catering-perk-item">
+          <div class="perk-icon"><i class="fa-solid fa-truck"></i></div>
+          <div class="perk-text">
+            <strong>Delivery Available</strong>
+            <span>On orders $100+ across local area</span>
+          </div>
+        </div>
+        <div class="catering-perk-item">
+          <div class="perk-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="perk-text">
+            <strong>Full Service Supplies</strong>
+            <span>Cups, stirrers, sugars &amp; napkins</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Core Packages Showcase Grid -->
+      <div class="packages-grid">
+        <!-- Morning Meeting -->
+        <div class="package-card highlight">
+          <div class="package-ribbon">Breakfast Favorite</div>
+          <div class="package-header">
+            <h3 class="package-title">Morning Meeting Package</h3>
+            <div class="package-price">$72.00</div>
+            <div class="package-serves">Serves 8 - 10 Guests</div>
+          </div>
+          <div class="package-items-list">
+            <div class="package-item-li">10-Piece Scratch Pastry Tray (Apple, Cherry, Cheese, Choc Almond)</div>
+            <div class="package-item-li">Joe to Go Coffee Box (Cups, stirrers, creamers, sugars included)</div>
+            <div class="package-item-li">1/2 Gallon Fresh Chilled Orange Juice</div>
+          </div>
+          <a href="https://forms.gle/D98VTQpNzoLvMCvq7" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">Order Package</a>
+        </div>
+
+        <!-- Lunch Meeting -->
+        <div class="package-card highlight">
+          <div class="package-ribbon">Lunch Favorite</div>
+          <div class="package-header">
+            <h3 class="package-title">Lunch Meeting Package</h3>
+            <div class="package-price">$98.00</div>
+            <div class="package-serves">Serves 8 - 12 Guests</div>
+          </div>
+          <div class="package-items-list">
+            <div class="package-item-li">Handcrafted Sandwich Tray (8 whole artisanal sandwiches cut in half)</div>
+            <div class="package-item-li">12 Individual Bags of Potato Chips</div>
+            <div class="package-item-li">Signature Freshly Baked Cookie Platter</div>
+          </div>
+          <a href="https://forms.gle/D98VTQpNzoLvMCvq7" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">Order Package</a>
+        </div>
+
+        <!-- Box Lunches & A La Carte Trays -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Box Lunches &amp; Custom Trays</h3>
+            <div class="package-price">From $13.00</div>
+            <div class="package-serves">Individual Boxes &amp; Dozen Trays</div>
+          </div>
+          <div class="package-items-list">
+            <div class="package-item-li">Individually labeled Box Lunches ($13 - $15) with chips &amp; cookie</div>
+            <div class="package-item-li">Taco &amp; Kolache Dozens ($37) w/ fresh salsa</div>
+            <div class="package-item-li">Gallon Drinks ($13) - Strawberry Hibiscus &amp; Lavender Lemonade</div>
+          </div>
+          <a href="catering.html" class="btn btn-outline" style="width: 100%;">View All Catering Options</a>
+        </div>
+      </div>
+
+      <!-- Compact Catering Bottom CTA Strip -->
+      <div class="compact-cta-strip" style="margin-top: 2.5rem;">
+        <div class="compact-cta-info">
+          <h3>Need a custom quote or interactive calculator?</h3>
+          <p>Explore our complete catering catalog, individual trays, gallon drinks, and live price calculator.</p>
+        </div>
+        <div class="compact-cta-buttons">
+          <a href="catering.html" class="btn btn-primary">
+            <i class="fa-solid fa-calculator"></i>
+            <span>View Full Catering Hub &amp; Estimator</span>
+          </a>
+          <a href="https://forms.gle/D98VTQpNzoLvMCvq7" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-solid fa-file-pen"></i>
+            <span>Order Form</span>
+          </a>
+          <a href="tel:2819786307" class="btn btn-secondary">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call 281-978-6307</span>
+          </a>
+          <button class="btn btn-secondary" data-view-image="catering-menu.png" data-image-alt="Original Catering Food Menu">
+            <i class="fa-solid fa-file-image"></i>
+            <span>Printed Menu</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUR STORY & COMMUNITY PHILOSOPHY -->
+  <section class="story-section" id="about">
+    <div class="container story-grid">
+      <div class="story-content">
+        <span class="hero-badge-wrap" style="background: rgba(255,255,255,0.1); color: var(--c-amber-300);">Our Heritage</span>
+        <h2>A Home Away From Home, <span>With Better Coffee.</span></h2>
+        <div class="story-quote-card">
+          “To provide our customers with top quality coffee, but more than that, top quality atmosphere. A place for you to come relax, grab a cup of coffee and one of our homemade pastries, and hang out.”
+        </div>
+        <p class="story-text">
+          Established in 2012 in the historic Golden Acres area of Pasadena, TX (located across from Silver Sycamore), Sycamore Grounds was born out of a genuine passion for fine coffee and community connection. We lovingly restored historic houses to create an oasis where guests escape city rush and step into a simpler, warmer time.
+        </p>
+        <p class="story-text">
+          Supporting local is our everyday standard. We proudly partner with Houston's <strong>Amaya Roasting Co.</strong> to serve beans roasted to accentuate natural acidity and rich sweetness. We use raw local honey, local cold-pressed juices, display pieces by local artists on our walls, and invite you to play chess on our porches.
+        </p>
+
+        <div class="story-pillars">
+          <div class="pillar-item">
+            <h5><i class="fa-solid fa-house-chimney"></i> Restored Houses</h5>
+            <p>Historic charm, original hardwood floors, and cozy corners for work or conversation.</p>
+          </div>
+          <div class="pillar-item">
+            <h5><i class="fa-solid fa-hand-holding-heart"></i> True Community</h5>
+            <p>Customers and staff are a genuine family. Everyone is welcomed with open arms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Visuals & Video Embed -->
+      <div class="story-visual-collage">
+        <img src="pansy-location.jpg" alt="Sycamore Grounds historic Pasadena house" class="story-img-main" />
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/GjUfjMr1fp0?rel=0&modestbranding=1" 
+            title="Sycamore Grounds Coffee House Story Video" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO LOCATIONS & OPERATING HOURS -->
+  <section class="locations-section" id="locations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Visit Us</span>
+        <h2 class="section-title">Two Welcoming Locations</h2>
+        <p class="section-subtitle">
+          Whether you're stopping by our original Pasadena home or our Deer Park shop, exceptional coffee and fresh pastries await you.
+        </p>
+      </div>
+
+      <div class="locations-grid">
+        <!-- Location 1 -->
+        <article class="location-card">
+          <img src="pansy-location.jpg" alt="The Original Pansy Location in Pasadena TX" class="location-card-img" />
+          <div class="location-card-content">
+            <span class="location-badge">The Original • Established 2012</span>
+            <h3 class="location-title">Pasadena Location (Pansy St.)</h3>
+            <p class="location-address">
+              <i class="fa-solid fa-location-dot" style="color: var(--c-amber-500); margin-top: 4px;"></i>
+              <span>2502 Pansy St., Pasadena, TX 77503 (Across from Silver Sycamore)</span>
+            </p>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td>6:00 AM – 7:30 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>7:00 AM – 7:30 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>7:00 AM – 7:30 PM</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="location-actions">
+              <a href="tel:2819786307" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-phone"></i> (281) 978-6307
+              </a>
+              <a href="https://maps.google.com/?q=2502+Pansy+St+Pasadena+TX+77503" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+              </a>
+              <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-solid fa-car"></i> Order Drive-Thru
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Location 2 -->
+        <article class="location-card">
+          <img src="deer-park-location.jpg" alt="Deer Park Second Location" class="location-card-img" />
+          <div class="location-card-content">
+            <span class="location-badge" style="background: var(--c-forest-100); color: var(--c-forest-600);">Second Location</span>
+            <h3 class="location-title">Deer Park Location (San Augustine)</h3>
+            <p class="location-address">
+              <i class="fa-solid fa-location-dot" style="color: var(--c-amber-500); margin-top: 4px;"></i>
+              <span>313 W San Augustine St., Deer Park, TX 77536</span>
+            </p>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td>6:00 AM – 7:30 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>7:00 AM – 7:30 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>7:00 AM – 7:30 PM</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="location-actions">
+              <a href="tel:2818848667" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-phone"></i> (281) 884-8667
+              </a>
+              <a href="https://maps.google.com/?q=313+W+San+Augustine+St+Deer+Park+TX+77536" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+              </a>
+              <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-solid fa-car"></i> Order Drive-Thru
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US & INQUIRY FORM -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info-col">
+        <span class="section-eyebrow">Let's Connect</span>
+        <h3>Contact Your Local Coffee Shop</h3>
+        <p>
+          Our customers are very important to us. If you have questions, feedback, catering requests, or would like to pre-order multiple baked goods from our kitchen, please reach out. We typically reply within 1-2 business days.
+        </p>
+        <p>
+          <strong>Urgent Request?</strong> The quickest and best way to reach us is by phone during operating hours!
+        </p>
+
+        <div class="contact-cards-stack">
+          <div class="contact-detail-card">
+            <div class="contact-icon-bubble"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-detail-info">
+              <h5>Primary Phone (Pasadena)</h5>
+              <a href="tel:2819786307">(281) 978-6307</a>
+            </div>
+          </div>
+          <div class="contact-detail-card">
+            <div class="contact-icon-bubble"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-detail-info">
+              <h5>Direct Email</h5>
+              <a href="mailto:info@sycamoregrounds.com">info@sycamoregrounds.com</a>
+            </div>
+          </div>
+          <div class="contact-detail-card">
+            <div class="contact-icon-bubble"><i class="fa-brands fa-facebook"></i></div>
+            <div class="contact-detail-info">
+              <h5>Facebook Community</h5>
+              <a href="https://www.facebook.com/sycamoregroundscoffee/" target="_blank" rel="noopener noreferrer">@sycamoregroundscoffee</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Contact Form -->
+      <div class="contact-form-card" id="contact-form">
+        <h4 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--c-roast-900);">Send Us a Message</h4>
+        <p style="font-size: 0.875rem; color: var(--c-text-muted); margin-bottom: 1.75rem;">Fill out the details below and our team will get right back to you.</p>
+
+        <form id="contact-form-inner">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="c_name">Full Name *</label>
+              <input type="text" id="c_name" name="name" class="form-input" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c_email">Email Address *</label>
+              <input type="email" id="c_email" name="email" class="form-input" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="c_phone">Phone Number</label>
+              <input type="tel" id="c_phone" name="phone" class="form-input" placeholder="(281) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c_topic">Inquiry Topic</label>
+              <select id="c_topic" name="topic" class="form-select">
+                <option value="General Question">General Question</option>
+                <option value="Catering Inquiry">Catering Inquiry</option>
+                <option value="Pre-Order Bakery">Pre-Order Bakery Items</option>
+                <option value="Private Event or Porch Rental">Private Event / Porch Gathering</option>
+                <option value="Feedback / Suggestion">Feedback / Suggestion</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="c_comments">Your Message *</label>
+            <textarea id="c_comments" name="message" class="form-textarea" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4>Sycamore Grounds</h4>
+        <p>
+          Your neighborhood coffee house since 2012. Restored houses, Amaya-roasted specialty coffee, in-house made pastries, and genuine family hospitality in Pasadena and Deer Park, Texas.
+        </p>
+        <div class="social-links-row">
+          <a href="https://www.facebook.com/sycamoregroundscoffee/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/sycamoregroundscoffeeshop/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/SycamoreGrounds" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links-list">
+          <li><a href="index.html" class="footer-link-item">Home</a></li>
+          <li><a href="menu.html" class="footer-link-item">Drink &amp; Food Menu</a></li>
+          <li><a href="catering.html" class="footer-link-item">Catering Packages</a></li>
+          <li><a href="about.html" class="footer-link-item">Our Philosophy</a></li>
+          <li><a href="contact.html" class="footer-link-item">Locations &amp; Hours</a></li>
+          <li><a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="footer-link-item">Square Online Store</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Store Hours</h5>
+        <ul class="footer-links-list" style="font-size: 0.875rem; color: rgba(255,255,255,0.75);">
+          <li><strong>Mon – Fri:</strong> 6:00 AM – 7:30 PM</li>
+          <li><strong>Saturday:</strong> 7:00 AM – 7:30 PM</li>
+          <li><strong>Sunday:</strong> 7:00 AM – 7:30 PM</li>
+          <li style="margin-top: 0.5rem; color: var(--c-amber-400);">Drive-Thru &amp; Dine-In Open Both Locations</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Seasonal Drops</h5>
+        <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+          Subscribe for notification of seasonal latte flights, autumn bakery treats, and holiday specials:
+        </p>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom-bar">
+      <div>&copy; 2012–2026 Sycamore Grounds Coffee House. All Rights Reserved.</div>
+      <div class="footer-legal-links">
+        <a href="https://www.sycamoregrounds.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a href="https://www.sycamoregrounds.com/sms-terms/" target="_blank" rel="noopener noreferrer">SMS Terms</a>
+        <a href="#about">About Amaya Roasters</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY ACTION BAR -->
+  <nav class="mobile-action-bar" aria-label="Mobile Quick Actions">
+    <a href="https://sycamore-grounds.square.site/" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn highlight">
+      <i class="fa-solid fa-mug-hot"></i>
+      <span>Order Online</span>
+    </a>
+    <a href="tel:2819786307" class="mobile-bar-btn">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call</span>
+    </a>
+    <a href="#locations" class="mobile-bar-btn">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Directions</span>
+    </a>
+    <a href="menu.html" class="mobile-bar-btn">
+      <i class="fa-solid fa-utensils"></i>
+      <span>Menu</span>
+    </a>
+  </nav>
+
+  <!-- MODAL IMAGE PREVIEW LIGHTBOX -->
+  <div class="image-modal" id="image-preview-modal" role="dialog" aria-modal="true" aria-label="Menu Image Preview">
+    <div class="modal-dialog-content">
+      <button class="modal-close-btn" aria-label="Close menu view">&times;</button>
+      <img src="" id="modal-preview-img" alt="Menu Sheet" />
+    </div>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
