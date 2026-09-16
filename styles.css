@@ -118,6 +118,13 @@ ul, ol {
   padding-right: 1.5rem;
 }
 
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 /* ==========================================================================
    ANNOUNCEMENT & TOP BAR
    ========================================================================== */
@@ -177,6 +184,20 @@ ul, ol {
   color: var(--c-amber-300);
 }
 
+/* Clean single-line Top Bar on Mobile */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+  }
+  .top-bar-inner {
+    justify-content: center;
+  }
+  .top-bar-contacts {
+    display: none; /* Hidden on mobile to prevent phone number wrapping; 1-tap call is in sticky bottom bar & drawer */
+  }
+}
+
 /* ==========================================================================
    NAVIGATION BAR (Sticky & Blurry)
    ========================================================================== */
@@ -184,7 +205,7 @@ ul, ol {
   position: sticky;
   top: 0;
   z-index: 900;
-  background: rgba(251, 248, 243, 0.92);
+  background: rgba(251, 248, 243, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--c-border);
@@ -192,7 +213,7 @@ ul, ol {
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow-sm);
 }
 
@@ -207,6 +228,8 @@ ul, ol {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+  text-decoration: none;
+  min-width: 0;
 }
 
 .brand-logo-img {
@@ -215,11 +238,13 @@ ul, ol {
   object-fit: contain;
   border-radius: var(--radius-sm);
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  flex-shrink: 0;
 }
 
 .brand-info {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .brand-name {
@@ -237,6 +262,57 @@ ul, ol {
   letter-spacing: 0.12em;
   font-weight: 600;
   color: var(--c-amber-500);
+}
+
+/* Mobile Header Layout - Prevents Order Button from overlapping Brand Name */
+@media (max-width: 768px) {
+  .site-header {
+    background: rgba(251, 248, 243, 0.98);
+  }
+  .header-container {
+    height: 64px;
+  }
+  .brand-logo {
+    gap: 0.65rem;
+    max-width: calc(100% - 50px);
+  }
+  .brand-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  .brand-name {
+    font-size: 1.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .brand-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+  /* Hide duplicate Order Online in top header on mobile: users have the sticky bottom bar & drawer */
+  .header-actions .btn {
+    display: none !important;
+  }
+  .header-actions {
+    gap: 0;
+  }
+  .mobile-toggle-btn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-name {
+    font-size: 1.02rem;
+  }
+  .brand-tagline {
+    display: none;
+  }
 }
 
 /* Nav Links */
@@ -542,10 +618,10 @@ ul, ol {
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.35rem, 5vw, 3.85rem);
+  font-size: clamp(1.85rem, 5.5vw, 3.85rem);
   font-weight: 800;
   color: var(--c-roast-900);
-  line-height: 1.12;
+  line-height: 1.15;
   margin-bottom: 1.35rem;
   letter-spacing: -0.02em;
 }
@@ -569,6 +645,23 @@ ul, ol {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2.75rem 0 3.25rem;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-padding {
+    padding: 3.5rem 0;
+  }
 }
 
 .hero-features {
@@ -2162,6 +2255,12 @@ ul, ol {
 /* ==========================================================================
    MOBILE STICKY ACTION BAR
    ========================================================================== */
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 74px;
+  }
+}
+
 .mobile-action-bar {
   display: flex;
   position: fixed;
@@ -2173,6 +2272,7 @@ ul, ol {
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding: 0.55rem 1rem;
+  padding-bottom: calc(0.55rem + env(safe-area-inset-bottom, 0px));
   z-index: 850;
   justify-content: space-around;
   align-items: center;
